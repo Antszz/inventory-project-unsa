@@ -4,8 +4,13 @@ from api.asset import Assets
 from api.inventory import Inventories
 from api.user import ListUser
 from api.user import User
+from flask_mongoengine import MongoEngine
 
 app = Flask(__name__)
+app.config['MONGODB_SETTINGS'] = {
+        "db": "inventory-unsa",
+    }
+db = MongoEngine(app)
 api = Api(app)
 
 api.add_resource(Inventories, '/inventories')
