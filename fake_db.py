@@ -6,6 +6,7 @@ FAKE_DB = [
         "rol": "admin",
         "first_name": "Eduardo Antonio",
         "last_name": "Sanchez Hincho",
+        "dni": "20202021"
     },
     {
         "type": "User",
@@ -13,6 +14,7 @@ FAKE_DB = [
         "rol": "recorder",
         "first_name": "Brian Emanuel",
         "last_name": "Silva Corrales",
+        "dni": "20202022"
     },
     {
         "type": "User",
@@ -20,6 +22,7 @@ FAKE_DB = [
         "rol": "recorder",
         "first_name": "Luis Guillermo",
         "last_name": "Villanueva Flores",
+        "dni": "20202023"
     },
     {
         "type": "User",
@@ -27,6 +30,7 @@ FAKE_DB = [
         "rol": "visualizer",
         "first_name": "Andy Geanpiero",
         "last_name": "Ñaca Rodriguez",
+        "dni": "20202024"
     },
     {
         "type": "User",
@@ -34,6 +38,7 @@ FAKE_DB = [
         "rol": "visualizer",
         "first_name": "Juan Carlos",
         "last_name": "Gutierrez Caceres",
+        "dni": "20202025"
     },
     {
         "type": "User",
@@ -41,6 +46,7 @@ FAKE_DB = [
         "rol": "recorder",
         "first_name": "Alex",
         "last_name": "Olanda Saavedra",
+        "dni": "20202026"
     },
 
     # Inventories

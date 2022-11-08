@@ -7,9 +7,17 @@ from serializers.user import UserSchema
 from services.utils import get_objects
 
 
-class ListUser(Resource):
+class ListUsers(Resource):
     def get(self):
         return get_objects('User')
+
+
+class CreateUser(Resource):
+    def post(self):
+        args = request.json
+        new_user = UserSchema().dump(args)
+        FAKE_DB.append(new_user)
+        return new_user, 200
 
 
 class User(Resource):
@@ -18,12 +26,6 @@ class User(Resource):
             if user['id'] == int(user_id):
                 return user
         abort(404, message="user {} doesn't exist".format(user_id))
-
-    def post(self):
-        args = request.json
-        new_user = UserSchema().dump(args)
-        FAKE_DB.append(new_user)
-        return new_user, 200
 
     def delete(self, user_id):
         for user in get_objects('User'):
