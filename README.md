@@ -42,10 +42,12 @@ Code: 404 NOT FOUND
 > **Agrega un nuevo inventario a la base de datos**
 
 **Method:** ``` POST```
+
 **URL:** ``` '/inventory'```
+
 **Returns:** 
 *	Nuevo objeto de tipo *Inventory*
-*	
+
 #### Data constraints *(InventorySchema)*
 * **id** *(Autoincrement/Required)*
 	* > ID del inventario
@@ -60,6 +62,7 @@ Code: 404 NOT FOUND
 > **Muestra los inventarios de la base de datos**
 
 **Method:** ``` GET```
+
 **URL:**  ``` /inventories ```
 
 **Returns** 
@@ -101,7 +104,9 @@ Code: 404 NOT FOUND
 > **Agrega un nuevo asset a la base de datos**
 
 **Method:** ``` POST```
+
 **URL:** ``` '/asset'```
+
 **Returns:** 
 
 *	Nuevo objeto de tipo *Asset*
@@ -131,7 +136,9 @@ Code: 404 NOT FOUND
 > **Muestra los assets de la base de datos**
 
 **Method:** ``` GET```
+
 **URL:**  ``` /assets ```
+
 **Returns** 
 * Objetos de tipo *Asset*
 
@@ -139,6 +146,7 @@ Code: 404 NOT FOUND
 ### Assets
 
 **Method:** ``` GET```
+
 **URL:** ``` /asset/<asset_id>```
 
 **Success Response:**
@@ -178,7 +186,9 @@ Code: 404 NOT FOUND
 > **Agrega un nuevo usuario a la base de datos**
 
 **Method:** ``` POST```
+
 **URL:** ``` /user ```
+
 **Returns:** 
 *	Nuevo objeto de tipo *User*
 
@@ -197,7 +207,9 @@ Code: 404 NOT FOUND
 > **Muestra los usuarios de la base de datos**
 
 **Method:** ``` GET```
+
 **URL:**  ``` /users ```
+
 **Returns** 
 * Objetos de tipo *Usuario*
 
@@ -205,6 +217,7 @@ Code: 404 NOT FOUND
 ### Usuarios
 
 **Method:**  `GET`
+
 **URL:** ``` /user/<user_id>```
 
 **Success Response:**
