@@ -6,7 +6,7 @@ from fake_db import FAKE_DB
 from serializers.user import UserSchema
 from services.utils import get_objects
 
-from models.user import UserInfo
+# from models.user import UserInfo
 
 
 class ListUsers(Resource):
