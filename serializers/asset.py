@@ -16,7 +16,8 @@ class AssetSchema(Schema):
     gp = fields.Str()
     detail = fields.Str()
     dimensions = fields.Str()
-    inventory = fields.Str()
+    location = fields.Integer()
+    inventory = fields.Integer()
     type = fields.Str(dump_default='Asset')
 
     def get_new_id(self, obj):

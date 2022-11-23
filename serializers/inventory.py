@@ -8,7 +8,7 @@ class InventorySchema(Schema):
     id = fields.Method('get_new_id')
     recorder = fields.Integer()
     receiver = fields.Integer()
-    location = fields.Str()
+    location = fields.Integer()
     assets = fields.List(fields.Integer(), dump_default=list)
     type = fields.Str(dump_default='Inventory')
 

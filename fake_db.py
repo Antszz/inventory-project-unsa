@@ -55,8 +55,8 @@ FAKE_DB = [
         "id": 1,
         "recorder": 6,      # Recorder ID
         "receiver": 5,      # Recorder ID
-        "location": "26.2-205-Aula",
-        "assets": [        # Assets IDs
+        "location": 1,      # Location ID
+        "assets": [         # Assets IDs
             1, 2, 3
         ]
     },
@@ -75,6 +75,7 @@ FAKE_DB = [
         "gp": "-",
         "detail": "Con tablero de melamina blanco y 01 espacio de rejillas",
         "dimensions": "1.18 X 0.50 X 0.81 Mts",
+        "location": 1,      # Location ID
         "inventory": 1      # Inventory ID
     },
     {
@@ -90,6 +91,7 @@ FAKE_DB = [
         "gp": "-",
         "detail": "Con tablero de melamina blanco y 01 espacio de rejillas",
         "dimensions": "1.18 X 0.50 X 0.81 Mts",
+        "location": 1,      # Location ID
         "inventory": 1      # Inventory ID
     },
     {
@@ -105,6 +107,15 @@ FAKE_DB = [
         "gp": "-",
         "detail": "-",
         "dimensions": "-",
+        "location": 1,      # Location ID
         "inventory": 1      # Inventory ID
     },
+
+    # Locations
+    {
+        "type": "Location",
+        "id": 1,
+        "code": "26.2-205",
+        "location_type": "Aula"
+    }
 ]

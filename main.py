@@ -8,6 +8,9 @@ from api.asset import ListAssets
 from api.inventory import Inventory
 from api.inventory import CreateInventory
 from api.inventory import ListInventories
+from api.location import Location
+from api.location import CreateLocation
+from api.location import ListLocations
 from api.user import ListUsers
 from api.user import User
 from api.user import CreateUser
@@ -27,6 +30,10 @@ api.add_resource(ListAssets, '/assets')
 api.add_resource(User, '/user/<user_id>')
 api.add_resource(CreateUser, '/user')
 api.add_resource(ListUsers, '/users')
+
+api.add_resource(Location, '/location/<location_id>')
+api.add_resource(CreateLocation, '/location')
+api.add_resource(ListLocations, '/locations')
 
 @app.route('/')
 def hello_world():
