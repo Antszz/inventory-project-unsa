@@ -14,8 +14,13 @@ from api.location import ListLocations
 from api.user import ListUsers
 from api.user import User
 from api.user import CreateUser
+from flask_mongoengine import MongoEngine
 
 app = Flask(__name__)
+app.config['MONGODB_SETTINGS'] = {
+        "db": "inventory-unsa",
+    }
+db = MongoEngine(app)
 CORS(app)
 api = Api(app)
 
