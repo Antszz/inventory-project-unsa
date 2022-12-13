@@ -3,13 +3,15 @@ from flask_restful import abort
 from flask_restful import Resource
 
 from fake_db import FAKE_DB
-from serializers.inventory import InventorySchema
+from serializers.inventory import InventorySchema, ListInventorySchema
 from services.utils import get_objects
 
 
 class ListInventories(Resource):
     def get(self):
-        return get_objects('Inventory')
+        inventories = get_objects('Inventory')
+        response = ListInventorySchema().dump(inventories, many=True)
+        return response
 
 
 class CreateInventory(Resource):
